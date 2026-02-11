@@ -15,8 +15,8 @@ export const styles = StyleSheet.create({
         marginBottom: 20,
     },
      image: {
-        width: 305,
-        height: 150,
+        width: 335,
+        height: 180,
     },
     backgroundImage: {
         width: '100%',
@@ -77,14 +77,16 @@ export const styles = StyleSheet.create({
     containerSocialMedia: {
         flexDirection: 'row',
         justifyContent: 'center',
+        paddingVertical: 20,
+        
     },
     buttonSocialMedia: {
         padding: 15,
         marginHorizontal: 10,
     },
     socialMediaIcon: {
-        width: 24,
-        height: 24,
+        width: 34,
+        height: 34,
     },
     
 });
