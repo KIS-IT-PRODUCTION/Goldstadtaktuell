@@ -4,6 +4,7 @@ import { RootStackParamList } from "./types";
 
 import SplashScreen from "../screens/Splash/SplashScreen";
 import WelcomeScreen from "../screens/Welcome/WelcomeSreen";
+import RegisterScreen from "../screens/Register/RegisterScreen";
 
 const Stack = createNativeStackNavigator<RootStackParamList>();
 
@@ -12,6 +13,7 @@ const AppNavigator: React.FC = () => {
         <Stack.Navigator initialRouteName="Splash" screenOptions={{ headerShown: false }}>
             <Stack.Screen name="Splash" component={SplashScreen} />
             <Stack.Screen name="Welcome" component={WelcomeScreen} />
+            <Stack.Screen name="Register" component={RegisterScreen} />
         </Stack.Navigator>
     )
 }

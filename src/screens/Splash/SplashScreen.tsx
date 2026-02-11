@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import { useNavigation } from "@react-navigation/native";
 import { View, Text, Image, TouchableOpacity } from "react-native";
 import { styles } from "./SplashScreen.style";
-import SplashLogo from "../../../assets/UI/logo-text.png";
+import SplashLogo from "../../../assets/UI/welcome-splash/splash-logo.png";
 
 const SplashScreen: React.FC = () => {
     const navigation = useNavigation<any>();

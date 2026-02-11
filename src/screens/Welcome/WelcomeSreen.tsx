@@ -1,10 +1,14 @@
 import React from "react";
 import { View, ImageBackground, Image, TouchableOpacity, Text } from "react-native";
+import { useNavigation } from "@react-navigation/native";
 import { styles } from "./WelcomeScreen.style";
-import SplashLogo2 from "../../../assets/UI/splash-logo2.png";
-import WelcomeBackground from "../../../assets/UI/background-welcome.png";
+import { LinearGradient } from "expo-linear-gradient";
+import { Apple, Google, Facebook } from "../../../assets/UI/export.image";
+import SplashLogo2 from "../../../assets/UI/welcome-splash/welcome-logo.png";
+import WelcomeBackground from "../../../assets/UI/welcome-splash/background-welcome.png";
 
 const WelcomeScreen: React.FC = () => {
+    const navigation = useNavigation<any>();
 
     return (
         <View style={styles.container}>
@@ -17,12 +21,35 @@ const WelcomeScreen: React.FC = () => {
                 </ImageBackground>
             </View>
             <View style={styles.containerButton}>
+                <LinearGradient
+                    colors={['#D4AF37', '#B8860B']}
+                    start={{ x: 0, y: 0 }}
+                    end={{ x: 0, y: 1 }}
+                    style={styles.buttonLogin}
+                >
+                    <TouchableOpacity onPress={() => navigation.navigate("Register")}>
+                        <Text style={styles.buttonText}>Anmelden</Text>
+                    </TouchableOpacity>
+                </LinearGradient>
                 <TouchableOpacity style={styles.buttonRegister}>
-                    <Text style={styles.buttonText}>Anmelden</Text>
-                </TouchableOpacity> 
-                <TouchableOpacity style={styles.buttonLogin}>
-                    <Text style={styles.buttonText}>Einloggen</Text>
-                </TouchableOpacity> 
+                    <Text style={styles.buttonTextRegister}>Einloggen</Text>
+                </TouchableOpacity>
+                <View style={styles.dividerContainer}>
+                    <View style={styles.line} />
+                        <Text style={styles.orText}>oder</Text>
+                    <View style={styles.line} />
+                </View>
+                <View style={styles.containerSocialMedia}>
+                    <TouchableOpacity style={styles.buttonSocialMedia}>
+                        <Image source={Apple} style={styles.socialMediaIcon} />
+                    </TouchableOpacity>
+                    <TouchableOpacity style={styles.buttonSocialMedia}>
+                        <Image source={Google} style={styles.socialMediaIcon} />
+                    </TouchableOpacity>
+                    <TouchableOpacity style={styles.buttonSocialMedia}>
+                        <Image source={Facebook} style={styles.socialMediaIcon} />
+                    </TouchableOpacity>
+                </View>
             </View>
         </View>
     )
