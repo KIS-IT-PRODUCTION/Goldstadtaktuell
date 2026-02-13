@@ -5,15 +5,15 @@ import { styles } from "./SplashScreen.style";
 import SplashLogo from "../../../assets/UI/welcome-splash/splash-logo.png";
 
 const SplashScreen: React.FC = () => {
-    const navigation = useNavigation<any>();
+    // const navigation = useNavigation<any>();
 
-    useEffect(() => {
-        const timer = setTimeout(() => {
-            navigation.replace("Welcome");
-        }, 3000);
-        console.log("Splash go => Welcome");
-        return () => clearTimeout(timer);
-    }, []);
+    // useEffect(() => {
+    //     const timer = setTimeout(() => {
+    //         navigation.replace("Welcome");
+    //     }, 1000);
+    //     console.log("Splash go => Welcome");
+    //     return () => clearTimeout(timer);
+    // }, []);
 
     return (
         <View style={styles.container}>

@@ -60,6 +60,14 @@ export const styles = StyleSheet.create({
         color: colors.text,
         fontSize: 16,
     },
+    errorContainer: {
+        marginHorizontal: 20,
+        marginTop: 4,
+    },
+    errorText: {
+        color: colors.inputEror,
+        fontSize: 14,
+    },
     buttonRegister: {
         height: 56,
         borderRadius: 16,
