@@ -27,12 +27,12 @@ const WelcomeScreen: React.FC = () => {
                     end={{ x: 0, y: 1 }}
                     style={styles.buttonLogin}
                 >
-                    <TouchableOpacity onPress={() => navigation.navigate("Register")}>
+                    <TouchableOpacity onPress={() => navigation.navigate("Login")}>
                         <Text style={styles.buttonText}>Anmelden</Text>
                     </TouchableOpacity>
                 </LinearGradient>
-                <TouchableOpacity style={styles.buttonRegister}>
-                    <Text style={styles.buttonTextRegister}>Einloggen</Text>
+                <TouchableOpacity style={styles.buttonRegister} onPress={() => navigation.navigate("Register")}>
+                    <Text style={styles.buttonTextRegister}>Registrieren</Text>
                 </TouchableOpacity>
                 <View style={styles.dividerContainer}>
                     <View style={styles.line} />
@@ -41,13 +41,13 @@ const WelcomeScreen: React.FC = () => {
                 </View>
                 <View style={styles.containerSocialMedia}>
                     <TouchableOpacity style={styles.buttonSocialMedia}>
-                        <Image source={Apple} style={styles.socialMediaIcon} />
+                        <Image source={Apple} style={styles.socialMediaIcon} resizeMode="contain" />
                     </TouchableOpacity>
                     <TouchableOpacity style={styles.buttonSocialMedia}>
-                        <Image source={Google} style={styles.socialMediaIcon} />
+                        <Image source={Google} style={styles.socialMediaIcon} resizeMode="contain" />
                     </TouchableOpacity>
                     <TouchableOpacity style={styles.buttonSocialMedia}>
-                        <Image source={Facebook} style={styles.socialMediaIcon} />
+                        <Image source={Facebook} style={styles.socialMediaIcon} resizeMode="contain" />
                     </TouchableOpacity>
                 </View>
             </View>

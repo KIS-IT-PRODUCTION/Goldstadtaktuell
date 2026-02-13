@@ -8,6 +8,9 @@ export const colors = {
     textGradient: ['#D4AF37', '#B8860B'],
     buttonText: '#ffffff',
     borderColor: ['#D4AF37', '#B8860B'],
+    border: ['#D4AF37', '#B8860B'],
     borderInput: '#E0E0E0',
-    line: "#615A5A"
+    line: "#E0E0E0",
+    textLine: '#615A5A',
+    inputEror: '#FF0000',
 };

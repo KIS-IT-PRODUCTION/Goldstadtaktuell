@@ -34,7 +34,7 @@ export const styles = StyleSheet.create({
     buttonRegister: {
         borderColor: colors.borderColor[1],
         borderWidth: 2,
-        paddingVertical: 20,
+        paddingVertical: 15,
         paddingHorizontal: 100,
         borderRadius: 16,
     },
@@ -62,7 +62,7 @@ export const styles = StyleSheet.create({
     dividerContainer: {
         flexDirection: 'row',
         alignItems: 'center',
-        paddingTop: 20,
+        paddingTop: 30,
     },
     line: {
         flex: 1,
@@ -85,8 +85,8 @@ export const styles = StyleSheet.create({
         marginHorizontal: 10,
     },
     socialMediaIcon: {
-        width: 34,
-        height: 34,
+        width: 38,
+        height: 38,
     },
     
 });
